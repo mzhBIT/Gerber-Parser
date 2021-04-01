@@ -1,0 +1,12 @@
+debug/main.o
+debug/am_template.o
+debug/aperture.o
+debug/dialogdcode.o
+debug/imglabel.o
+debug/mainwindow.o
+debug/processor.o
+debug/qrc_imgsrc.o
+debug/moc_mainwindow.o
+debug/moc_dialogdcode.o
+debug/moc_imglabel.o
+debug/moc_processor.o

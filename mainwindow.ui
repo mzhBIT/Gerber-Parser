@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1440</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>璟丰GerBer编辑软件</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>24</width>
+    <height>24</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>1141</width>
+      <height>811</height>
+     </rect>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1139</width>
+       <height>809</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>200</width>
+       <height>200</height>
+      </size>
+     </property>
+     <layout class="QGridLayout" name="gridLayout"/>
+    </widget>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea_2">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>570</y>
+      <width>251</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>249</width>
+       <height>249</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>1160</x>
+      <y>10</y>
+      <width>271</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <widget class="QTextBrowser" name="textBrowser_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>256</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>20</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>选择丝印</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>丝印层</string>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>256</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>定位层</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>100</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>选择定位</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>1160</x>
+      <y>220</y>
+      <width>271</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>参数</string>
+    </property>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>20</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>A/B面</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>110</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>镜像</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_3">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>110</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>水平镜像</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_4">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>110</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>垂直镜像</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>70</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>A面</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_2">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>70</y>
+       <width>88</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>B面</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>料号</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>140</y>
+       <width>24</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>旋转</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>140</y>
+       <width>166</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QRadioButton" name="radioButton_3">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButton_4">
+        <property name="text">
+         <string>90</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButton_5">
+        <property name="text">
+         <string>180</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButton_6">
+        <property name="text">
+         <string>270</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>430</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>解析</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>1300</x>
+      <y>430</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>输出</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser_3">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>480</y>
+      <width>251</width>
+      <height>81</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1440</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>工具</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action"/>
+   <addaction name="action_2"/>
+   <addaction name="action_3"/>
+   <addaction name="action_4"/>
+   <addaction name="action_5"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionY"/>
+   <addaction name="action_6"/>
+   <addaction name="action_D"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_2">
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_7"/>
+   <addaction name="action_8"/>
+   <addaction name="action_9"/>
+   <addaction name="action_10"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_3">
+   <property name="windowTitle">
+    <string>toolBar_3</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_11"/>
+   <addaction name="action_12"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_4">
+   <property name="windowTitle">
+    <string>toolBar_4</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_13"/>
+   <addaction name="action_14"/>
+   <addaction name="action_15"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_5">
+   <property name="windowTitle">
+    <string>toolBar_5</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_16"/>
+   <addaction name="action_17"/>
+   <addaction name="action_18"/>
+  </widget>
+  <action name="action">
+   <property name="icon">
+    <iconset resource="../Pic/imgsrc.qrc">
+     <normaloff>:/icon/zoom_in.png</normaloff>:/icon/zoom_in.png</iconset>
+   </property>
+   <property name="text">
+    <string>放大</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+&gt;</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="icon">
+    <iconset resource="../Pic/imgsrc.qrc">
+     <normaloff>:/icon/zoom_out.png</normaloff>:/icon/zoom_out.png</iconset>
+   </property>
+   <property name="text">
+    <string>缩小</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+&lt;</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="icon">
+    <iconset resource="../Pic/imgsrc.qrc">
+     <normaloff>:/icon/Finger_DragFourSides.png</normaloff>:/icon/Finger_DragFourSides.png</iconset>
+   </property>
+   <property name="text">
+    <string>移动</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="icon">
+    <iconset resource="../Pic/imgsrc.qrc">
+     <normaloff>:/icon/Preview_global.png</normaloff>:/icon/Preview_global.png</iconset>
+   </property>
+   <property name="text">
+    <string>全局</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="icon">
+    <iconset resource="../Pic/imgsrc.qrc">
+     <normaloff>:/icon/preview.png</normaloff>:/icon/preview.png</iconset>
+   </property>
+   <property name="text">
+    <string>局部</string>
+   </property>
+  </action>
+  <action name="actionY">
+   <property name="icon">
+    <iconset resource="../Pic/imgsrc.qrc">
+     <normaloff>:/icon/Y.png</normaloff>:/icon/Y.png</iconset>
+   </property>
+   <property name="text">
+    <string>Y白边设置</string>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="icon">
+    <iconset resource="../Pic/imgsrc.qrc">
+     <normaloff>:/icon/text_width.png</normaloff>:/icon/text_width.png</iconset>
+   </property>
+   <property name="text">
+    <string>修改线宽</string>
+   </property>
+  </action>
+  <action name="action_D">
+   <property name="icon">
+    <iconset resource="../Pic/imgsrc.qrc">
+     <normaloff>:/icon/D.png</normaloff>:/icon/D.png</iconset>
+   </property>
+   <property name="text">
+    <string>线D码表</string>
+   </property>
+  </action>
+  <action name="action_7">
+   <property name="icon">
+    <iconset resource="../Pic/imgsrc.qrc">
+     <normaloff>:/icon/location.jpg</normaloff>:/icon/location.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>选点</string>
+   </property>
+  </action>
+  <action name="action_8">
+   <property name="icon">
+    <iconset resource="../Pic/imgsrc.qrc">
+     <normaloff>:/icon/measure.png</normaloff>:/icon/measure.png</iconset>
+   </property>
+   <property name="text">
+    <string>测量</string>
+   </property>
+  </action>
+  <action name="action_9">
+   <property name="icon">
+    <iconset resource="../Pic/imgsrc.qrc">
+     <normaloff>:/icon/delete_box.jpg</normaloff>:/icon/delete_box.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>框内删除</string>
+   </property>
+  </action>
+  <action name="action_10">
+   <property name="icon">
+    <iconset resource="../Pic/imgsrc.qrc">
+     <normaloff>:/icon/save_box.jpg</normaloff>:/icon/save_box.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>框内保存</string>
+   </property>
+  </action>
+  <action name="action_11">
+   <property name="icon">
+    <iconset resource="../Pic/imgsrc.qrc">
+     <normaloff>:/icon/last_step.jpg</normaloff>:/icon/last_step.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>撤销</string>
+   </property>
+  </action>
+  <action name="action_12">
+   <property name="icon">
+    <iconset resource="../Pic/imgsrc.qrc">
+     <normaloff>:/icon/recovery.jpg</normaloff>:/icon/recovery.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>恢复</string>
+   </property>
+  </action>
+  <action name="action_13">
+   <property name="icon">
+    <iconset resource="../Pic/imgsrc.qrc">
+     <normaloff>:/icon/bar_code.jpg</normaloff>:/icon/bar_code.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>条形码</string>
+   </property>
+  </action>
+  <action name="action_14">
+   <property name="icon">
+    <iconset resource="../Pic/imgsrc.qrc">
+     <normaloff>:/icon/QR_code.jpg</normaloff>:/icon/QR_code.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>二维码</string>
+   </property>
+  </action>
+  <action name="action_15">
+   <property name="icon">
+    <iconset resource="../Pic/imgsrc.qrc">
+     <normaloff>:/icon/text_input.jpg</normaloff>:/icon/text_input.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>文本输入</string>
+   </property>
+  </action>
+  <action name="action_16">
+   <property name="icon">
+    <iconset resource="../Pic/imgsrc.qrc">
+     <normaloff>:/icon/choose.jpg</normaloff>:/icon/choose.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>选择</string>
+   </property>
+  </action>
+  <action name="action_17">
+   <property name="icon">
+    <iconset resource="../Pic/imgsrc.qrc">
+     <normaloff>:/icon/rotation.jpg</normaloff>:/icon/rotation.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>旋转</string>
+   </property>
+  </action>
+  <action name="action_18">
+   <property name="icon">
+    <iconset resource="../Pic/imgsrc.qrc">
+     <normaloff>:/icon/delete.jpg</normaloff>:/icon/delete.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>删除</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../Pic/imgsrc.qrc"/>
+  <include location="../Pic/imgsrc.qrc"/>
+  <include location="../Pic/imgsrc.qrc"/>
+ </resources>
+ <connections/>
+</ui>

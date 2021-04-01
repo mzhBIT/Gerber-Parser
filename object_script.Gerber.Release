@@ -1,0 +1,12 @@
+release/main.o
+release/am_template.o
+release/aperture.o
+release/dialogdcode.o
+release/imglabel.o
+release/mainwindow.o
+release/processor.o
+release/qrc_imgsrc.o
+release/moc_mainwindow.o
+release/moc_dialogdcode.o
+release/moc_imglabel.o
+release/moc_processor.o
